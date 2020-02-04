@@ -9,8 +9,9 @@ import kotlinx.android.synthetic.main.activity_example.*
 class ExampleActivity : BrightcovePlayer() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_example)
+        brightcoveVideoView = playerView.bcVideoView
+        super.onCreate(savedInstanceState)
     }
 
     override fun onConfigurationChanged(newConfig: Configuration) {
