@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">InTheGameBC</string>
+
+    <!-- Brightcove Account ID -->
+    <string name="account">6123004948001</string>
+    <!-- Brightcove Policy Key -->
+    <string name="policy">BCpkADawqM0lLx5gn3W7EH_Y_RhGkfNIu7gyMs4KcHq93vjZlPOPpbk_y1jTZnrUuWFxrK5D9dQx2l9_mzvuCbZLvsWs8TFhCQ0_QSd6CclMcvUu5i8YzaKXBaRL6COFKQt7hAbo5fO4Al1e</string>
+    <!-- Brightcove Video ID -->
+    <string name="videoId">6125325659001</string>
+</resources>
