@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OverlayActivity">
+
+    <com.tiagolira.itgbcframework.CustomBCVideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_margin="32dp"
+        android:background="#CCCCCC"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36"/>
+
+    <com.tiagolira.itgbcframework.ITGOverlayView
+        android:id="@+id/overlayView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintHeight_max="240dp"
+        app:layout_constraintBottom_toBottomOf="@id/videoView"
+        app:layout_constraintLeft_toLeftOf="@id/videoView"
+        app:layout_constraintRight_toRightOf="@id/videoView"
+        app:layout_constraintTop_toTopOf="@id/videoView"/>
+
+    <LinearLayout
+        android:id="@+id/controlsContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/videoView" >
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/play" />
+
+        <Button
+            android:id="@+id/btnPause"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:background="@drawable/pause" />
+
+        <Button
+            android:id="@+id/btnForward"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="4dp"
+            android:background="@drawable/forward" />
+    </LinearLayout>
+
+    <TextView
+        android:text="Custom integration with the ITGOverlayView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_margin="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/controlsContainer"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

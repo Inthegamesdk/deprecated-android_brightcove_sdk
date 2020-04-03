@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         btnPlayer.setOnClickListener { openPlayerActivity() }
         btnExample.setOnClickListener { openExampleActivity() }
+        btnOverlay.setOnClickListener { openOverlayActivity() }
     }
 
     fun openPlayerActivity() {
@@ -41,6 +42,16 @@ class MainActivity : AppCompatActivity() {
 
         //example activity with a custom implementation
         val intent = Intent(this, ExampleActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun openOverlayActivity() {
+        if (!isOnline(this)) {
+            Toast.makeText(this@MainActivity, "No internet connection available", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        val intent = Intent(this, OverlayActivity::class.java)
         startActivity(intent)
     }
 

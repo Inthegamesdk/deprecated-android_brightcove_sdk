@@ -25,6 +25,10 @@
             android:configChanges="orientation|screenSize|screenLayout"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
+        <activity
+            android:name="com.tiagolira.inthegamebc.OverlayActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
