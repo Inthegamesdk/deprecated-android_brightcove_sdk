@@ -1,9 +1,10 @@
-package com.tiagolira.inthegamebc
+package com.inthegame.inthegamebc
 
 import android.content.res.Configuration
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.brightcove.player.view.BrightcovePlayer
+import com.inthegame.inthegamebc.R
 import kotlinx.android.synthetic.main.activity_example.*
 
 class ExampleActivity : BrightcovePlayer() {

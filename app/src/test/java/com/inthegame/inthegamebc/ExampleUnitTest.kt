@@ -1,4 +1,4 @@
-package com.tiagolira.inthegamebc
+package com.inthegame.inthegamebc
 
 import org.junit.Test
 

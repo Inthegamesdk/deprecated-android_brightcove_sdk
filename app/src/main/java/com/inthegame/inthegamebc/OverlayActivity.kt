@@ -1,4 +1,4 @@
-package com.tiagolira.inthegamebc
+package com.inthegame.inthegamebc
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,6 +7,7 @@ import com.brightcove.player.edge.Catalog
 import com.brightcove.player.edge.VideoListener
 import com.brightcove.player.model.Video
 import com.brightcove.player.view.BrightcovePlayer
+import com.inthegame.inthegamebc.R
 import com.tiagolira.itgbcframework.ITGOverlayView
 import com.tiagolira.itgbcframework.ITGVideoTapListener
 import kotlinx.android.synthetic.main.activity_overlay.*
@@ -41,7 +42,9 @@ class OverlayActivity : BrightcovePlayer() {
 
         //load the video player
         val emitter = videoView.eventEmitter
-        val catalog = Catalog(emitter, getString(R.string.account), getString(R.string.policy))
+        val catalog = Catalog(emitter, getString(R.string.account), getString(
+            R.string.policy
+        ))
 
         catalog.findVideoByID(getString(R.string.videoId), (object : VideoListener() {
             override fun onVideo(video: Video?) {

@@ -8,7 +8,7 @@
         android:gravity="center"
         android:orientation="vertical"
         android:padding="40dp"
-        tools:context=".MainActivity">
+        tools:context="com.inthegame.inthegamebc.MainActivity">
 
     <TextView
             android:text="Welcome to the IN THE GAME integration demo"

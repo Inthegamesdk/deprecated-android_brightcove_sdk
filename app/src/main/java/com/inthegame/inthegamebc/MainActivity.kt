@@ -1,4 +1,4 @@
-package com.tiagolira.inthegamebc
+package com.inthegame.inthegamebc
 
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.content.Intent
 import android.net.ConnectivityManager
 import android.widget.Toast
+import com.inthegame.inthegamebc.R
 import com.tiagolira.itgbcframework.ITGBCPlayerActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
