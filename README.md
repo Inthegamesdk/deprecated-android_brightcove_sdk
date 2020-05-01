@@ -123,6 +123,43 @@ catalog.findVideoByID("<brightcode_video_id>", (object : VideoListener() {
 }))
 ```
 
+## Overlay mode
+
+The overlay option allows for maximum flexibility - you create a view for the ITG interactive Overlay and position it over your video player as you see fit.
+
+You can add the overlay in a view in your layout file 
+(add constraints or layout parameters as needed - you'll need to make sure it is adjusted over the video view):
+```
+<com.tiagolira.itgbcframework.ITGOverlayView />
+```
+
+You can load it as:
+```
+overlayView.load(getString(R.string.videoId), "demos")
+```
+
+You will need to send playback updates manually to the overlay
+(please remember to update the timer whenever you seek to a different part of the video, and to send play/pause commands whenever the video is started or paused):
+```
+overlayView.sendCommand(ITGOverlayView.COMMAND_PLAY)
+overlayView.sendCommand(ITGOverlayView.COMMAND_PAUSE)
+overlayView.sendCommand(ITGOverlayView.COMMAND_STOP)
+overlayView.updateTime(10000) //in milliseconds
+```
+
+If you need to detect touches on the video area, the load method accepts a listener for it:
+```
+val listener = object: ITGVideoTapListener {
+   override fun didTapVideo() {
+      //handle the tap event
+   }
+}
+overlayView.load(getString(R.string.videoId), "demos", "en", listener)
+```
+
+You can check the `OverlayActivity` in the example app for a detailed integration sample.
+
+
 ## Notes
 
 Here is the activity loading code for Java:
