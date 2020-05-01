@@ -8,8 +8,8 @@ import com.brightcove.player.edge.VideoListener
 import com.brightcove.player.model.Video
 import com.brightcove.player.view.BrightcovePlayer
 import com.inthegame.inthegamebc.R
-import com.tiagolira.itgbcframework.ITGOverlayView
-import com.tiagolira.itgbcframework.ITGVideoTapListener
+import com.inthegame.itgbcframework.ITGOverlayView
+import com.inthegame.itgbcframework.ITGVideoTapListener
 import kotlinx.android.synthetic.main.activity_overlay.*
 
 class OverlayActivity : BrightcovePlayer() {

@@ -8,7 +8,7 @@
         tools:context=".ITGPlayerActivity"
         android:background="@android:color/black">
 
-    <com.tiagolira.itgbcframework.ITGPlayerView
+    <com.inthegame.itgbcframework.ITGPlayerView
             android:id="@+id/playerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

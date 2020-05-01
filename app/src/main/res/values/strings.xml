@@ -2,9 +2,18 @@
     <string name="app_name">InTheGameBC</string>
 
     <!-- Brightcove Account ID -->
-    <string name="account">xxxxxx</string>
-    <!-- Brightcove Policy Key -->
-    <string name="policy">xxxxxx</string>
+    <!--    <string name="account">xxxxxx</string>
+    <string name="policy">xxxxxx</string> -->
     <!-- Brightcove Video ID -->
-    <string name="videoId">xxxxxx</string>
+    <!--   <string name="videoId">xxxxxx</string> -->
+
+      <string name="account">1918791248001</string>
+
+      <!-- Brightcove Policy Key -->
+    <string name="policy">BCpkADawqM2JgKwAB824ztanqfAe0agmPoglWnzRKlr3g86q5Zilx-9qi-fYXYPGEbuQdfy_5tMPNrqvN4poWlE6YOtUkEFFUQmtLLSgSO2cYQ2BrQN6Rouzj4rKaTBn84p69iZ9o4IyAidu</string>
+
+    <!-- Brightcove Video ID -->
+    <string name="videoId">5798594570001</string>
+
+    <string name="oldVideoId">6125325659001</string>
 </resources>

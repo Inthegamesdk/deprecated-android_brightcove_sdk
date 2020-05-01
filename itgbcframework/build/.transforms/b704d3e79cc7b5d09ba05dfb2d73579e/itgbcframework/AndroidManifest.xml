@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tiagolira.itgbcframework"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    package="com.inthegame.itgbcframework"
+    android:versionCode="2"
+    android:versionName="1.1" >
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -17,12 +17,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.tiagolira.itgbcframework.ITGPlayerActivity"
+            android:name="com.inthegame.itgbcframework.ITGPlayerActivity"
             android:configChanges="orientation|screenSize|screenLayout"
             android:theme="@style/AppTheme.FullScreen" >
         </activity>
         <activity
-            android:name="com.tiagolira.itgbcframework.ITGBCPlayerActivity"
+            android:name="com.inthegame.itgbcframework.ITGBCPlayerActivity"
             android:configChanges="orientation|screenSize|screenLayout"
             android:theme="@style/AppTheme.FullScreen" >
         </activity>

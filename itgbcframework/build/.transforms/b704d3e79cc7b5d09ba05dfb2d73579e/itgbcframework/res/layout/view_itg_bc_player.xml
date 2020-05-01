@@ -16,7 +16,7 @@
         android:background="@android:color/transparent"
         android:animateLayoutChanges="true">
 
-        <com.tiagolira.itgbcframework.CustomBCVideoView
+        <com.inthegame.itgbcframework.CustomBCVideoView
             android:id="@+id/videoView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

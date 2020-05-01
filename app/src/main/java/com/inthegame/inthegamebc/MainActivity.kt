@@ -7,7 +7,7 @@ import android.content.Intent
 import android.net.ConnectivityManager
 import android.widget.Toast
 import com.inthegame.inthegamebc.R
-import com.tiagolira.itgbcframework.ITGBCPlayerActivity
+import com.inthegame.itgbcframework.ITGBCPlayerActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 
