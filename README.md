@@ -60,7 +60,7 @@ To load the video channel in a view in your custom layout file:
 (add constraints or layout parameters as needed)
 
 ```
-<com.tiagolira.itgbcframework.ITGBCPlayerView
+<com.inthegame.itgbcframework.ITGBCPlayerView
   android:id="@+id/playerView"
   android:layout_width="match_parent"
   android:layout_height="100dp"
@@ -86,7 +86,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 ```
 
-There are two additional parameters for further configuration: `language` and `allowsFullScreen`:
+There are some additional parameters for further configuration: `language`, `allowsFullScreen` and `devMode`:
 
 ```
 playerView.load(
@@ -95,8 +95,11 @@ playerView.load(
             "<brightcode_policy_key>",
             "<your broadcaster name>", 
             "en", 
+            false,
             false)
 ```
+
+You can set devMode to true to use the development environment. If not specified, production environment is used as the default. 
 
 ## Manual mode
 
@@ -127,10 +130,9 @@ catalog.findVideoByID("<brightcode_video_id>", (object : VideoListener() {
 
 The overlay option allows for maximum flexibility - you create a view for the ITG interactive Overlay and position it over your video player as you see fit.
 
-You can add the overlay in a view in your layout file 
-(add constraints or layout parameters as needed - you'll need to make sure it is adjusted over the video view):
+You can add the overlay in a view in your layout file:
 ```
-<com.tiagolira.itgbcframework.ITGOverlayView />
+<com.inthegame.itgbcframework.ITGOverlayView />
 ```
 
 You can load it as:
@@ -145,6 +147,11 @@ overlayView.sendCommand(ITGOverlayView.COMMAND_PLAY)
 overlayView.sendCommand(ITGOverlayView.COMMAND_PAUSE)
 overlayView.sendCommand(ITGOverlayView.COMMAND_STOP)
 overlayView.updateTime(10000) //in milliseconds
+```
+
+The overlay content will be sized to take the available space while fitting a specified video aspect. The default is the standard 16:9. For other video formats, you can set the aspect ratio as:
+```
+overlayView.setAspectRatio("4:3")
 ```
 
 If you need to detect touches on the video area, the load method accepts a listener for it:
