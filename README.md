@@ -86,7 +86,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 ```
 
-There are some additional parameters for further configuration: `language`, `allowsFullScreen` and `devMode`:
+There are additional parameters for further configuration: `language`, `allowsFullScreen` and `devMode`:
 
 ```
 playerView.load(
@@ -100,6 +100,8 @@ playerView.load(
 ```
 
 You can set devMode to true to use the development environment. If not specified, production environment is used as the default. 
+
+If you want to connect ITG content with your user's account, there are other parameters in the `load()` method where you can specify your user's ID and display name. The variables are called `userBroadcasterForeignID` and `userInitialName`.
 
 ## Manual mode
 
